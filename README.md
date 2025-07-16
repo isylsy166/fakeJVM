@@ -22,3 +22,11 @@ FakeJVM/
     │                   └── Print.java            # PRINT 명령어 구현
     └── test/
 ```
+
+## 테스트용 txt 파일
+```
+PUSH 10
+PUSH 20
+ADD
+PRINT
+```
