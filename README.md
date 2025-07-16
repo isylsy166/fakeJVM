@@ -4,16 +4,21 @@
 ## 디렉토리 구조
 ```
 FakeJVM/
-├── src/
-│   └── jvm/
-│       ├── FakeJVM.java           # 메인 실행기
-│       ├── Frame.java             # 하나의 실행 단위
-│       ├── OperandStack.java      # 스택 자료구조
-│       ├── Instruction.java       # 명령어 인터페이스
-│       └── instructions/
-│           ├── Push.java
-│           ├── Add.java
-│           └── Print.java
-├── instructions.txt               # 명령어 입력
-└── README.md
+├── build.gradle   
+├── settings.gradle           
+├── README.md                 
+└── src/
+    ├── main/
+    │   └── java/
+    │       └── com/
+    │           └── fakejvm/
+    │               ├── FakeJVM.java              # 메인 실행기
+    │               ├── Frame.java                # Frame 구조
+    │               ├── OperandStack.java         # 스택 자료구조
+    │               ├── Instruction.java          # 명령어 인터페이스
+    │               └── instructions/
+    │                   ├── Push.java             # PUSH 명령어 구현
+    │                   ├── Add.java              # ADD 명령어 구현
+    │                   └── Print.java            # PRINT 명령어 구현
+    └── test/
 ```
